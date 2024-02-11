@@ -1,4 +1,4 @@
-alert("Hello and welcome to the Condition Assignment");
+alert("Hello and welcome to the Memory Lane Assignment");
 alert(
   "I hight suggest openiong the Console first and then refreshing the page"
 );
@@ -50,20 +50,18 @@ if (points < 60) {
   );
 }
 
-//let prompt the Weight of the pumpkin
+//let prompt the Weight of the Books
 
 // the prompt will show the result by console
 
 alert(
-  "Next Up, it is Pumpkin Picking Time. Tell me how much your pumpkin weighs and I will tell you what it costs"
+  "Next Up, it sell Books. Tell me how much your Books weighs and I will tell you what it costs"
 );
 
 // le prompt the weight
 
-let weight = parseFloat(
-  prompt("PLease enter the weight of the prize pumpkin picked!")
-);
-console.log("Your pumpkin of " + weight.toFixed(2));
+let weight = parseFloat(prompt("PLease enter the weight of the Books picked!"));
+console.log("Your Books of " + weight.toFixed(2));
 
 //let make alert to the problem 3
 alert(
@@ -72,22 +70,22 @@ alert(
 
 //let prompt the user item 1 cost
 
-let item1Cost = parseFloat(prompt("What is the cost for first item?"));
+let item1Cost = parseFloat(prompt("What is the cost for first Book?"));
 
 // let prompt item 2 cost
 
-let item2Cost = parseFloat(prompt("What is the cost of second item?"));
+let item2Cost = parseFloat(prompt("What is the cost of second Books?"));
 
 //let calculate the both cost items
 
 let item1 = item1Cost + item2Cost;
 
-console.log("your pumpkin of lbs" + item1.toFixed(2));
+console.log("total Books is lbs " + item1.toFixed(2));
 
 // let calculate the total of member
 
 let member = parseFloat(
   prompt(" Are you prefered customere? Please only answer Yes or No!")
 );
-let membertotal = item1 + member;
-console.log("total is lbs" + membertotal.toFixed(2));
+// let membertotal = item1 + member;
+// console.log("total is lbs" + membertotal.toFixed(2));

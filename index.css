@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 p {
   margin: 0;
 
@@ -28,4 +32,13 @@ p {
 }
 #wilma {
   background-color: blue;
+}
+
+.container {
+  background-color: rgb(2, 201, 118);
+  color: white;
+}
+
+h2 {
+  text-align: center;
 }
