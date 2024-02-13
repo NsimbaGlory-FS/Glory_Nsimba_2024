@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  margin: 0;
+
+  padding: 1%;
+
+  font-family: Arial, tahoma, verdana;
+}
+
+a:link {
+  color: #336699;
+  font-weight: 500;
+}
+
+a:hover {
+  background-color: #336699;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+body {
+  background-color: #87ceeb; /*The background will be yelow because embedded overrides the linked stylesheet */
+}
+p {
+  color: black; /*This is red but the first paragraph will be blue because inline overrides embedded */
+}
+.fred {
+  background-color: rgb(201, 104, 104);
+}
+#wilma {
+  background-color: blue;
+}
+
+.container {
+  background-color: rgb(2, 201, 118);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
