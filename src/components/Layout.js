@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <Nav />
       <div className="content">{children}</div>
       <footer>
-        <p>This website is more componets example</p>
+        <p>This Gatsby website is copyright 2024 Web deploy</p>
       </footer>
     </div>
   );

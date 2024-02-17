@@ -1,5 +1,5 @@
-import { Link } from "gatsby";
 import React from "react";
+// import { Link } from "gatsby";
 import Layout from "../components/Layout";
 // import styles from "../styles/home.module.css";
 
@@ -14,10 +14,15 @@ export default function Home() {
             Web design & web developer is better to create the different
             application.
           </p>
-          {/* <Link className={styles.btn} to="/Projects">
+          {/* <Link className={styles.btn} to="/projects">
             Projects
           </Link> */}
         </div>
+        <img
+          src="/Future-of-Water-iS-1401109426 (2).jpeg"
+          alt="site banner"
+          style={{ maxWidth: "100%" }}
+        />
       </section>
     </Layout>
   );
