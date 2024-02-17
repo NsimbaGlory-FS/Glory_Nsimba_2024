@@ -7,13 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `notes`,
-        path: `${__dirname}/src/notes/`,
-      },
-    },
+    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +19,6 @@ module.exports = {
   siteMetadata: {
     title: "My Exercise week 1.",
     description: "I develop my coding & Deploy.",
-    copyright: "This website is more componets example",
+    copyright: "This Gatsby website is copyright 2024 Web deploy",
   },
 };
