@@ -1,0 +1,17 @@
+GET http://localhost:3000/movies
+
+###
+
+GET http://localhost:3000/movies/1234
+
+
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "car": "BMW",
+    "year": "2020"
+}
+
