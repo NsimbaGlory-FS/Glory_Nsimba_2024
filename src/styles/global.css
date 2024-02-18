@@ -5,7 +5,7 @@
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: white;
+  color: black;
 }
 html,
 body {
@@ -14,7 +14,7 @@ body {
 body {
   background: radial-gradient(
     at top left,
-    rgba(146, 43, 225, 1) 0%,
+    rgb(209, 166, 242) 0%,
     rgba(43, 9, 107, 1) 100%
   );
   background-repeat: no-repeat;
@@ -50,6 +50,6 @@ nav a:hover {
 }
 footer p {
   text-align: center;
-  color: #bbb;
+  color: black;
   margin: 40px auto;
 }
