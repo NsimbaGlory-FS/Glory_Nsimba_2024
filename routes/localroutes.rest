@@ -2,7 +2,7 @@ GET http://localhost:3000/movies
 
 ###
 
-GET http://localhost:3000/movies/1234
+GET http://localhost:3000/movies/65d281a203a2dd9e832751dd
 
 
 ###
@@ -15,3 +15,18 @@ Content-Type: application/json
     "year": "2020"
 }
 
+###
+
+DELETE  http://localhost:3000/movies/65d281a203a2dd9e832751dd
+
+
+###
+
+
+PATCH  http://localhost:3000/movies/65d281a203a2dd9e832751dd
+Content-Type: application/json
+
+{
+    "car": "Chevrolet",
+    "year": "2010"
+}

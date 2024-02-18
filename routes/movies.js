@@ -3,6 +3,22 @@ const router = express.Router();
 
 const Movie = require("../models/movie");
 
+// GET, POST, PATCH, DELETE
+
+const getMovie = async (req, res, next) => {
+  let movie;
+  try {
+    movie = await Movie.findById(req.params.id);
+    if (movie === null) {
+      return res.status(404).json({ message: "Movie not found" });
+    }
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+  res.movie = movie;
+  next();
+};
+
 // GET ALL
 
 router.get("/", async (req, res) => {
@@ -16,8 +32,8 @@ router.get("/", async (req, res) => {
 
 // GET ONE
 
-router.get("/:id", (req, res) => {
-  res.send(`Movie ID: ${req.params.id}`);
+router.get("/:id", getMovie, async (req, res) => {
+  res.json(res.movie);
 });
 
 // POST CREATE
@@ -37,14 +53,30 @@ router.post("/", async (req, res) => {
 
 // PATCH UPDATE
 
-router.patch("/:id", (req, res) => {
-  res.send(`Movie ID: ${req.params.id}`);
+router.patch("/:id", getMovie, async (req, res) => {
+  if (req.body.car != null) {
+    res.movie.car = req.body.car;
+  }
+  if (req.body.year != null) {
+    res.movie.year = req.body.year;
+  }
+  try {
+    const updateMovie = await res.movie.save();
+    res.json(updateMovie);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
 });
 
 // DELETE
 
-router.delete("/:id", (req, res) => {
-  res.send(`Movie ID: ${req.params.id}`);
+router.delete("/:id", getMovie, async (req, res) => {
+  try {
+    await res.movie.remove();
+    res.json({ message: "Removed movie" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
 });
 
 module.exports = router;
