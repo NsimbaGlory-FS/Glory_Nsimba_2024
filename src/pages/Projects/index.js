@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import styles from "../../styles/projects.css";
+// import styles from "../../styles/projects.css";
 
 const Projects = () => {
   return (
     <Layout>
-      <div className={styles.portfolio}>
+      <div>
         <h2>What is GatsbyJS used for?</h2>
         <h3>
           Gatsby is the open source, frontend framework for React developers
