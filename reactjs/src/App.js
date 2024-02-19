@@ -8,7 +8,7 @@ function App() {
 
   const API_BASE =
     process.env.NODE_ENV === "development"
-      ? `http://localhost:3001`
+      ? `http://localhost:3001/api/v1`
       : process.env.REACT_APP_BASE_URL;
 
   let ignore = false;
