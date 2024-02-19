@@ -10,6 +10,7 @@ function App() {
     process.env.NODE_ENV === "development"
       ? `http://localhost:3001`
       : process.env.REACT_APP_BASE_URL;
+
   let ignore = false;
   useEffect(() => {
     if (!ignore) {
