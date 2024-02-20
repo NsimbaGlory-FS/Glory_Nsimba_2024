@@ -61,8 +61,8 @@ router.patch("/:id", getMovie, async (req, res) => {
     res.movie.actor = req.body.actor;
   }
   try {
-    const updateMovie = await res.movie.save();
-    res.json(updateMovie);
+    const updatedMovie = await res.movie.save();
+    res.json(updatedMovie);
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

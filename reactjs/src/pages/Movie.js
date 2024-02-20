@@ -91,7 +91,7 @@ function Movie() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    updateStudent();
+    updateMovie();
   };
 
   const handleInputChanges = (event) => {
@@ -105,9 +105,9 @@ function Movie() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Car Profile</h1>
+        <h1>Movie Profile</h1>
         <h5>{values && values.name}</h5>
-        <p>{values && values.name}</p>
+        <p>{values && values.actor}</p>
         <button onClick={() => deleteMovie()}>Delete Movie</button>
         <Link to="/">Home</Link>
         <Link to="/dashboard">Dashboard</Link>
@@ -123,7 +123,7 @@ function Movie() {
             />
           </label>
           <label>
-            actor:
+            Actor:
             <input
               type="text"
               name="actor"
