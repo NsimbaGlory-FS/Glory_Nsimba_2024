@@ -9,8 +9,8 @@ function Movie() {
   const [error, setError] = useState(null);
 
   const [values, setValues] = useState({
-    car: "",
-    year: "",
+    name: "",
+    actor: "",
   });
 
   const { id } = useParams();
@@ -39,10 +39,10 @@ function Movie() {
         .then((res) => res.json())
         .then((data) => {
           console.log({ data });
-          // const { car, year } = data;
+          // const { name, actor } = data;
           setValues({
-            car: data.car,
-            year: data.year,
+            name: data.name,
+            actor: data.actor,
           });
         });
     } catch (error) {
@@ -91,43 +91,43 @@ function Movie() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    updateMovie();
+    updateStudent();
   };
 
   const handleInputChanges = (event) => {
     event.persist();
     setValues((values) => ({
       ...values,
-      [event.target.car]: event.target.value,
+      [event.target.name]: event.target.value,
     }));
   };
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1> Movie Profile</h1>
-        <h5>{values && values.car}</h5>
-        <p>{values && values.year}</p>
+        <h1>Car Profile</h1>
+        <h5>{values && values.name}</h5>
+        <p>{values && values.name}</p>
         <button onClick={() => deleteMovie()}>Delete Movie</button>
         <Link to="/">Home</Link>
         <Link to="/dashboard">Dashboard</Link>
 
         <form onSubmit={(event) => handleSubmit(event)}>
           <label>
-            Car:
+            Name:
             <input
               type="text"
               name="name"
-              value={values.car}
+              value={values.name}
               onChange={handleInputChanges}
             />
           </label>
           <label>
-            Year:
+            actor:
             <input
               type="text"
-              name="year"
-              value={values.year}
+              name="actor"
+              value={values.actor}
               onChange={handleInputChanges}
             />
           </label>

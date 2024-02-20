@@ -7,10 +7,9 @@ function Dashboard() {
   const [movies, setMovies] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
   const [values, setValues] = useState({
-    car: "",
-    year: "",
+    name: "",
+    actor: "",
   });
 
   const API_BASE =
@@ -70,38 +69,38 @@ function Dashboard() {
     event.persist();
     setValues((values) => ({
       ...values,
-      [event.target.car]: event.target.value,
+      [event.target.name]: event.target.value,
     }));
   };
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1> Movies :</h1>
+        <h1>Movies:</h1>
         <Link to="/">Home</Link>
         <ul>
           {movies?.map((movie) => (
             <li key={movie._id}>
-              <Link to={`/movies/${movie._id}`}>{movie.car}</Link>
+              <Link to={`/movies/${movie._id}`}>{movie.name}</Link>
             </li>
           ))}
         </ul>
         <form onSubmit={(event) => handleSubmit(event)}>
           <label>
-            Car:
+            Name:
             <input
               type="text"
               name="name"
-              value={values.car}
+              value={values.name}
               onChange={handleInputChanges}
             />
           </label>
           <label>
-            Year:
+            Actor:
             <input
               type="text"
-              name="year"
-              value={values.year}
+              name="actor"
+              value={values.actor}
               onChange={handleInputChanges}
             />
           </label>

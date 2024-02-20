@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const movieSchema = new mongoose.Schema({
-  car: {
+  name: {
     type: String,
     required: true,
   },
 
-  year: {
+  actor: {
     type: String,
     required: true,
   },

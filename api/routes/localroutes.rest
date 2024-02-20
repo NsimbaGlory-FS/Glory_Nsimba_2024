@@ -11,8 +11,8 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-    "car": "BMW",
-    "year": "2020"
+    "name": "creed 1",
+    "actor": "jordan"
 }
 
 ###
@@ -27,6 +27,6 @@ PATCH  http://localhost:3000/movies/65d281a203a2dd9e832751dd
 Content-Type: application/json
 
 {
-    "car": "Chevrolet",
-    "year": "2010"
+    "name": "wakanda",
+    "actor": "bossman"
 }

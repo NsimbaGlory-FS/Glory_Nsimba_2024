@@ -40,8 +40,8 @@ router.get("/:id", getMovie, async (req, res) => {
 
 router.post("/", async (req, res) => {
   const movie = new Movie({
-    car: req.body.car,
-    year: req.body.year,
+    name: req.body.name,
+    actor: req.body.actor,
   });
   try {
     const newMovie = await movie.save();
@@ -54,11 +54,11 @@ router.post("/", async (req, res) => {
 // PATCH UPDATE
 
 router.patch("/:id", getMovie, async (req, res) => {
-  if (req.body.car != null) {
-    res.movie.car = req.body.car;
+  if (req.body.name != null) {
+    res.movie.name = req.body.name;
   }
-  if (req.body.year != null) {
-    res.movie.year = req.body.year;
+  if (req.body.actor != null) {
+    res.movie.actor = req.body.actor;
   }
   try {
     const updateMovie = await res.movie.save();
