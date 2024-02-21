@@ -16,6 +16,11 @@
     "api": "cd api, nodemon server"
   },
   "dependencies": {
-    "concurrently": "^8.2.2"
-  }
+    "concurrently": "^8.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

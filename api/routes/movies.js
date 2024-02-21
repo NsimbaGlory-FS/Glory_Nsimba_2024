@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Movie = require("../models/movie");
 
-// GET, POST, PATCH, DELETE
+// GET, POST, PATCH, DELETE//
 
 const getMovie = async (req, res, next) => {
   let movie;
