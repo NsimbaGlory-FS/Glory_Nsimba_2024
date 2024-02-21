@@ -12,9 +12,9 @@ export default function Home() {
           <h3>Develop & Deploy</h3>
           <p>web designer & web developer and deploy Article to Gatsby.</p>
           <p>
-            <button onclick="document.location='https://www.gatsbyjs.com/'">
-              HTML Tutorial
-            </button>
+            <a href="https://www.gatsbyjs.com/">
+              Click to Visit Gatsby webside!
+            </a>
           </p>
         </div>
         <img
