@@ -12,7 +12,7 @@ Content-Type: application/json
 
 {
     "name": "creed 1",
-    "actor": "jordan"
+    "actor": "jordan3"
 }
 
 ###
