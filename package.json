@@ -16,6 +16,7 @@
     "api": "cd api; nodemon server.js"
   },
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "react-router-dom": "^6.22.1"
   }
 }
