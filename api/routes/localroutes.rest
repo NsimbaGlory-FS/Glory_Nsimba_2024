@@ -27,6 +27,6 @@ PATCH  http://localhost:3000/movies/65d281a203a2dd9e832751dd
 Content-Type: application/json
 
 {
-    "name": "wakanda",
-    "actor": "bossman"
+    "name": "New Name",
+    "actor": "New Actor"
 }

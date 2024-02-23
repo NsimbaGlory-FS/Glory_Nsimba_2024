@@ -19,7 +19,7 @@ const getMovie = async (req, res, next) => {
   next();
 };
 
-// GET ALL  jj
+// GET ALL
 
 router.get("/", async (req, res) => {
   try {
