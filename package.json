@@ -1,8 +1,9 @@
 {
   "name": "gloapi",
+  "description": "a really cool app",
   "version": "1.0.0",
   "engines": {
-    "node": "v13.1.0"
+    "node": "v18.19.0"
   },
   "main": "index.js",
   "scripts": {
