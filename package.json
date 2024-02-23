@@ -2,7 +2,7 @@
   "name": "gloapi",
   "version": "1.0.0",
   "engines": {
-    "node": "v18.19.0."
+    "node": "v13.1.0"
   },
   "main": "index.js",
   "scripts": {
