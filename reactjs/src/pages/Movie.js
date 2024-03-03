@@ -17,7 +17,7 @@ function Movie() {
   const navigate = useNavigate();
 
   const API_BASE =
-    process.env.NODE_ENV === "development" 
+    process.env.NODE_ENV === "development"
       ? `http://localhost:3001/api/v1`
       : process.env.REACT_APP_BASE_URL;
 
