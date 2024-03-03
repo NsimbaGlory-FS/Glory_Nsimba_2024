@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Movie from "./pages/Movie";
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(null);
   return (
     <Router>
       <Routes>
